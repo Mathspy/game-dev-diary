@@ -1,0 +1,163 @@
+/* Variables */
+:root {
+  --measure: 75ch;
+  --color: #FFFFFF;
+  --background: #1D1A31;
+  --codeBg: #393552;
+  --accentColor: #FC5F15;
+
+  color: var(--color);
+  font-family: Greycliff, Helvetica, Arial, sans-serif;
+}
+
+/* max-width is 75 characters */
+* {
+  max-width: var(--measure);
+  line-height: 1.5;
+}
+
+/* Only these elements are excluded from max-width rule */
+html,
+body,
+div,
+nav {
+  max-width: none;
+}
+
+/* Default background */
+body {
+  background-color: var(--background);
+  margin: 2.25rem 1.5rem;
+}
+
+/* --------------------- */
+/* GAME DEV DIARY HEADER */
+body > header {
+  /* Prepare the header to let the nav bar act as a sidebar to the logo */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+body > header ul {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* Make the nav bar space its items evenly */
+  display: flex;
+  justify-content: space-evenly;
+}
+body > header ul li {
+  /* Minimum space between two nav items is 1.5rem */
+  margin: auto 0.75rem;
+}
+body > header > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  /*
+    Make the nav act as a sidebar that moves below logo if not enough space
+    is available
+  */
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 60%;
+}
+body > header > nav {
+  flex-grow: 1;
+}
+/* Positioning for Game Dev Diary logo */
+body > header > a > svg {
+  height: 1.5em;
+  vertical-align: bottom;
+}
+
+/* SVG Icons by default should be displayed inline on the baseline */
+svg {
+  display: inline;
+  height: 0.75em;
+  vertical-align: baseline;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Make the line height of headings not too huge */
+h1, h1 *,
+h2, h2 *,
+h3, h3 *,
+h4, h4 *,
+h5, h5 *,
+h6, h6 * {
+  line-height: 1.2;
+}
+
+/* Separate each article from the others */
+article {
+  margin-bottom: 3rem;
+}
+/* Remove article headers lower margin and have the paragraph below them small */
+article > header > h1,
+article > header > h2,
+article > header > h3 {
+  margin-bottom: 0;
+}
+article > header > p {
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+/* Images are by default blocks. And they shouldn't bypass width limitations dictated by their parents */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Centering */
+/* Center block elements */
+main,
+header,
+footer,
+img {
+  margin: 0 auto;
+}
+/* Center text */
+figure > figcaption, footer {
+  text-align: center;
+}
+
+/* Format */
+pre {
+  font-family: Menlo, Monaco, Consolas, source-code-pro, "Courier New", monospace;
+}
+
+a, a:visited {
+  color: var(--accentColor);
+}
+
+/* Make figure fit the width of the container */
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Add quote-like sidebar to quotes */
+blockquote {
+  margin: 0;
+  border-left: 0.75ch solid;
+  padding-left: 1em;
+}
+
+/* Make inline codes standout */
+code {
+  border-radius: .3em;
+  background: var(--codeBg);
+  padding: .15em .2em .05em;
+  white-space: normal;
+}

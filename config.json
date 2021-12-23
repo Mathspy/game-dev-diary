@@ -1,4 +1,5 @@
 {
   "name": "Game Dev Diary",
-  "description": "A diary publicly documenting Mathspy's journey in learning how to make games from the first day she set her mind on doing it."
+  "description": "A diary publicly documenting Mathspy's journey in learning how to make games from the first day she set her mind on doing it.",
+  "cover": "/media/cover.png"
 }

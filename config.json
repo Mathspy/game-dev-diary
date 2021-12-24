@@ -1,5 +1,11 @@
 {
   "name": "Game Dev Diary",
   "description": "A diary publicly documenting Mathspy's journey in learning how to make games from the first day she set her mind on doing it.",
-  "cover": "/media/cover.png"
+  "author": "Mathspy",
+  "cover": "/media/cover.png",
+  "locale": "en_US",
+  "url": "https://gamediary.dev",
+  "twitter": {
+    "creator": "@Mathspy"
+  }
 }

@@ -15,6 +15,7 @@
   max-width: var(--measure);
   line-height: 1.5;
   box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 /* Only these elements are excluded from max-width rule */

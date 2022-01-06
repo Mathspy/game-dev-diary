@@ -229,3 +229,42 @@ pre {
   min-width: 100%;
   box-sizing: content-box;
 }
+
+/* Rose Pine color scheme */
+/* https://rosepinetheme.com/palette.html#rose-pine */
+pre > code, code .punctuation {
+  /* text */
+  color: #e0def4;
+}
+code .comment {
+  /* inactive */
+  color: #555169;
+}
+code .keyword, code .namespace {
+  /* pine */
+  color: #3e8fb0;
+}
+/* in Rust "constructors" are just patterns (usually in match statements) */
+code .type, code .constructor {
+  /* foam */
+  color: #9ccfd8;
+}
+/* functions and operators that are not part of a lifetime */
+code .function, code :not(.label) .operator {
+  /* rose */
+  color: #ebbcba;
+}
+code .string, code .constant {
+  /* gold */
+  color: #f6c177;
+}
+/* lifetimes and numeric literals */
+code .label, code .constant.numeric {
+  /* iris */
+  color: #c4a7e7;
+}
+/* function-like macros and attribute macros */
+code .function.macro, code .attribute {
+  /* love */
+  color: #eb6f92;
+}

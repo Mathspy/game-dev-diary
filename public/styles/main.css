@@ -217,3 +217,15 @@ aside > div > span[role=img] {
 aside p {
   margin: 0 auto;
 }
+
+/* Code blocks */
+pre {
+  border-radius: 0.75rem;
+  background: var(--blockBg);
+  overflow: auto;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  padding: 1.5rem;
+  min-width: 100%;
+  box-sizing: content-box;
+}

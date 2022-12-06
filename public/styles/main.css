@@ -121,8 +121,9 @@ article > header > p {
   font-size: 0.8rem;
 }
 
-/* Images are by default blocks. And they shouldn't bypass width limitations dictated by their parents */
-img {
+/* Images and videos are by default blocks. */
+/* And they shouldn't bypass width limitations dictated by their parents */
+img, video {
   max-width: 100%;
   display: block;
 }
@@ -132,7 +133,7 @@ img {
 main,
 header,
 footer,
-img {
+img, video {
   margin: 0 auto;
 }
 /* Center text */

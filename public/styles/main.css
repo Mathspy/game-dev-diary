@@ -269,3 +269,11 @@ code .function.macro, code .attribute {
   /* love */
   color: #eb6f92;
 }
+/* special turbofish highlighting because I love it */
+code .turbofish {
+  color: var(--accentColor);
+  text-shadow:
+    0 0 1.7rem #fff,
+    0 0 3.4rem #fff,
+    0 0 5.2rem #fff;
+}

@@ -272,8 +272,5 @@ code .function.macro, code .attribute {
 /* special turbofish highlighting because I love it */
 code .turbofish {
   color: var(--accentColor);
-  text-shadow:
-    0 0 1.7rem #fff,
-    0 0 3.4rem #fff,
-    0 0 5.2rem #fff;
+  text-shadow: 0 0 0.3em var(--accentColor);
 }
